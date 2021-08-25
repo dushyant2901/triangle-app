@@ -14,3 +14,6 @@ function calculateMultiplicationOfTwoNumbers(a, b) {
     const multiplicationOfNumbers = a * b;
     return multiplicationOfNumbers
 }
+function showOutput(data) {
+    output.innerText = data
+}
