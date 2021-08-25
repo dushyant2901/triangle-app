@@ -13,3 +13,10 @@ function check(sum) {
     } //else { output.innerHTML="Not A Triangle" }
     return output.innerHTML="Not A Triangle"
 }
+
+function isTriangle() {
+    let sum = calculateSum(Number(angleInputs[0].value), Number(angleInputs[1].value), Number(angleInputs[2].value))
+console.log(sum)
+    check(sum)
+
+}   
