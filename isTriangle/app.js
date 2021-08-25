@@ -20,3 +20,5 @@ console.log(sum)
     check(sum)
 
 }   
+
+calculate.addEventListener("click", isTriangle)
