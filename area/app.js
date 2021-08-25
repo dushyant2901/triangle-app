@@ -17,3 +17,14 @@ function calculateMultiplicationOfTwoNumbers(a, b) {
 function showOutput(data) {
     output.innerText = data
 }
+
+calculate.addEventListener("click", () => {
+
+    let intputLengthValue = Number(intputs[0].value);
+    let intputBreadthValue = Number(intputs[1].value);
+
+
+    let result = calculateArea(intputLengthValue, intputBreadthValue);
+    showOutput(result);
+
+})
