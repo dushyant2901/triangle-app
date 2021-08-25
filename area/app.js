@@ -8,3 +8,9 @@ function calculateArea(a, b) {
     return area;
 
 }
+
+function calculateMultiplicationOfTwoNumbers(a, b) {
+
+    const multiplicationOfNumbers = a * b;
+    return multiplicationOfNumbers
+}
