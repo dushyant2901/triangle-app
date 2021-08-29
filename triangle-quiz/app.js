@@ -7,7 +7,7 @@ submitAnswer.addEventListener("click",calculateScore);
 function calculateScore(){
 let index=0;
 let score=0;
-let answers=["90","90","90","90"];
+let answers=["90","60","100"];
 
 
     let formResults=new FormData(quizForm);
@@ -17,5 +17,5 @@ score++;
         }
         index++;
     }
-output.innerText=score;
+output.innerText=`Your Score Is : ${score}`;
 }
