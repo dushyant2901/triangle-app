@@ -1,17 +1,20 @@
-const intputs=document.querySelectorAll(".input")
+const inputs=document.querySelectorAll(".input")
 
 const calculate=document.querySelector("#calculate")
 const output=document.querySelector("#output");
 
 calculate.addEventListener("click",()=>{
 
-    let inputLengthValue=Number(intputs[0].value)
-    let inputBreadthValue=Number(intputs[1].value)
+    let inputLengthValue=Number(inputs[0].value)
+    let inputBreadthValue=Number(inputs[1].value)
 
 
     let result =   calculateHypotenuse(inputLengthValue,inputBreadthValue)
- 
+ if(inputs[0].value&&inputs[1].value)
     showOutput(result);
+    else{
+        output.innerText=`Input fields  can't be empty`
+    }
 
 
 })
@@ -29,5 +32,5 @@ function calculateSumOfSquares(a,b){
 }
 
 function showOutput(data) {
-    output.innerText = data
+    output.innerText =`The hypotenuse of the triangle for the given data is ${data}` 
 }
