@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+body{
+ 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navigation{
+  height: 10vh;
+  background-color: rgb(217, 190, 248);
+  
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.navigation .list{display: flex;
+align-items: center;
+justify-content: center;
+gap: 4rem;
+font-size: 1.3rem;
+list-style: none;
+}
+
+.navigation .list .link{
+  text-decoration: none;
+  color: rgb(136, 81, 218);
+}
+.navigation .list  .link-active{font-weight: 700;
+font-size: 1.4rem;}
+.container{
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: rgb(176, 2, 245);
+  text-align: center;
+  background-color: rgb(248, 242, 255);
+   
+}
+.container h1{
+  margin-bottom: 0.5rem;
+}
+.quiz-container form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:0.5rem;
+  font-size: 1rem;
+padding: 0 0.6rem;
+}
+.question-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ button{
+   font-size: 1rem;
+   padding: 0.4rem 0.8rem;
+   border-radius: 0.4rem;
+   color: white;
+   background-color:  rgb(176, 2, 245);
+ }
+ #output{
+   margin-top: 1rem;
+   font-size: 1rem;
+ }
+ .footer{
+ 
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgb(217, 190, 248);
+    border-top-right-radius: 1rem;
+    height: 15vh;
+   
+  }
+  .footer-heading{font-weight: bold;
+    font-size: large;
+    color: rgb(176, 2, 245);
+  }
+  .footer .link{
+    color: rgb(176, 2, 245);
+    text-decoration: none;
+  }
+  .footer ul{
+    padding-inline-start: 0px;
+    list-style: none;
+  }
+  .footer .list-unbulleted-list{display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+  }
