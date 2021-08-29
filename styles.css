@@ -8,9 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-coxlor: lightblue;
-    background-color: black;
+    height: 85vh;
+
+    background-color: rgb(217, 190, 248);
 }
 
 
@@ -27,15 +27,15 @@
 
 .cell {
     height: 23vh;
-    border: 3px solid rgb(145, 253, 117);
+    border: 3px solid rgb(176, 2, 245);
     margin: 1rem 0.3rem;
     padding: 1rem;
     font-size: 1.7rem;
     font-weight: 600;
     display: flex;
     align-items: center;
-    color: rgb(145, 253, 117);
-    coslor: rgb(84, 84, 238);
+    color: rgb(176, 2, 245);
+    
    justify-content: center;
    border-radius: 0.2rem;
 }
@@ -43,3 +43,31 @@
     text-decoration: none;
   
 }
+
+.footer{
+ 
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgb(217, 190, 248);
+    border-top-right-radius: 1rem;
+    height: 15vh;
+    color: var(--primary-green);
+  }
+  .footer-heading{font-weight: bold;
+    font-size: large;
+    color: rgb(176, 2, 245);
+  }
+  .footer .link{
+    color: rgb(176, 2, 245);
+    text-decoration: none;
+  }
+  .footer ul{
+    padding-inline-start: 0px;
+    list-style: none;
+  }
+  .footer .list-unbulleted-list{display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+  }
