@@ -1,4 +1,4 @@
-const intputs = document.querySelectorAll(".input");
+const inputs = document.querySelectorAll(".input");
 const calculate = document.querySelector("#calculate");
 const output = document.querySelector("#output");
 
@@ -15,16 +15,21 @@ function calculateMultiplicationOfTwoNumbers(a, b) {
     return multiplicationOfNumbers
 }
 function showOutput(data) {
-    output.innerText = data
+    output.innerText =`The area of the triangle for the given data is ${data} square-metre.` 
 }
 
 calculate.addEventListener("click", () => {
 
-    let intputLengthValue = Number(intputs[0].value);
-    let intputBreadthValue = Number(intputs[1].value);
+    let inputLengthValue = Number(inputs[0].value);
+    let inputBreadthValue = Number(inputs[1].value);
 
 
-    let result = calculateArea(intputLengthValue, intputBreadthValue);
-    showOutput(result);
+    let result = calculateArea(inputLengthValue, inputBreadthValue);
+    if(inputs[0].value&&inputs[1].value){
+    showOutput(result);}
+    else{
+        output.innerText=`Input fields  can't be empty`
+    }
+
 
 })
