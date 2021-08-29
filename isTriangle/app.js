@@ -17,7 +17,11 @@ function check(sum) {
 function isTriangle() {
     let sum = calculateSum(Number(angleInputs[0].value), Number(angleInputs[1].value), Number(angleInputs[2].value))
 console.log(sum)
-    check(sum)
+if(angleInputs[0].value&&angleInputs[1].value&&angleInputs[2].value)   
+check(sum)
+else{
+    output.innerHTML="Input fields cannot be empty"
+}
 
 }   
 
