@@ -7,7 +7,7 @@ submitAnswer.addEventListener("click",calculateScore);
 function calculateScore(){
 let index=0;
 let score=0;
-let answers=["90","60","100"];
+let answers=["90","75","60","61","100"];
 
 
     let formResults=new FormData(quizForm);
